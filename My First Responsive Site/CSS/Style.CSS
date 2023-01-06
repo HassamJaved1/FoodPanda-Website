@@ -1,0 +1,215 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  background-color: azure;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  z-index: 1;
+}
+
+#logo {
+  margin: 15px;
+  display: inline-block;
+}
+
+#logo img {
+  width: 145px;
+  height: 27px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  position: sticky;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: rgb(207, 23, 124);
+  font-size: 1.2rem;
+  display: block;
+  padding: 3px 44px;
+  font-weight: bolder;
+  border-radius: 20px;
+  text-shadow: 1px 1px 10px pink;
+}
+#navbar::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #504f4f;
+  opacity: 0.15;
+  position: absolute;
+  z-index: -1;
+
+  position: sticky;
+}
+#SearchBar {
+  border-radius: 20px;
+  text-align: center;
+  padding: 7px;
+
+  border: 2px solid rgb(240, 181, 240);
+  display: flex;
+  justify-content: right;
+}
+#navbar ul li a:hover {
+  background-color: rgb(255, 254, 250);
+
+  transition: all;
+}
+
+#Home::before {
+  height: 80%;
+  width: 100%;
+  content: "";
+  background: url(../Images/bg.png) no-repeat center center/cover;
+  opacity: 0.28;
+  position: absolute;
+  z-index: -1;
+}
+
+#Home h3 {
+  color: rgb(191 30 130);
+}
+
+.primary-headings {
+  padding: 42px;
+  font-size: 3.7rem;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  margin-top: 20px;
+}
+#Home p {
+  color: black;
+  font-family: "Monoton", cursive;
+  font-size: 1.5rem;
+}
+#Home {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 325px;
+  font-family: "Great Vibes", cursive;
+}
+
+.order {
+  padding: 9px 15px;
+  margin: 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Great Vibes", cursive;
+  color: black;
+  font-size: 1.3rem;
+  position: relative;
+}
+.order:hover {
+  background-color: rgb(235, 199, 227);
+  font-family: "Great Vibes", cursive;
+  transition: all;
+  transition-duration: 0.25s;
+  font-size: 1.8rem;
+  color: rgb(191 30 130);
+}
+
+#Services {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fee6e9;
+}
+.box {
+  width: 320px;
+  height: 330px;
+  border: 2px solid rgb(191 53 135);
+  border-radius: 30px;
+  margin: 50px 5px;
+  padding: 5px;
+
+  background-color: rgb(229 176 182);
+}
+
+.box h3 {
+  text-align: center;
+  color: rgb(191 30 130);
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+}
+
+.box img {
+  display: block;
+  width: 125px;
+  margin: auto;
+}
+.box p {
+  padding: 5px;
+  text-align: justify;
+  font-family: "Monoton", cursive;
+}
+
+#aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 333px;
+}
+#aboutus::before {
+  height: 60%;
+  width: 100%;
+  content: "";
+  background: url(/Images/pngtree-social-media-icon-in-pink-transparent-color-in-circle-png-image_2351556.jpg);
+  opacity: 0.28;
+  position: absolute;
+  z-index: -1;
+}
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+#contact input,
+#contact textarea {
+  border-radius: 20px;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#contact::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0.34;
+  position: absolute;
+  background: url(../Images/Contact-Us-Icon-1.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 450px 223px;
+  z-index: -1;
+}
+#contact label {
+  font-family: "Great Vibes", cursive;
+  font-size: x-large;
+}
